@@ -2,11 +2,11 @@
   <div class="bg-gray-900 mt-20 py-10 lg:flex border-t-2">
     <div class="flex-1 px-5 justify-between">
       <p class="text-white">
-        Copyright &copy; 2022 SaftiSolutions all rights reserved.
+        Copyright &copy; 2022 Safeti Solutions all rights reserved.
       </p>
       <br />
       <p class="text-white">
-        Avalon, the avalon logo and other works are property of Saftsolutions
+        Avalon, the avalon logo and other works are property of Safeti Solutions
       </p>
     </div>
     <div class="flex-1 px-5 py-5 justify-between">

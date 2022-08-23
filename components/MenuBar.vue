@@ -12,7 +12,7 @@
         flex-1
         items-center
         lg:justify-end
-        sm:justify-center
+        justify-center
         md:py-2
         md:mr-5
         flex
@@ -20,70 +20,12 @@
         flex-col
       "
     >
-      <nuxt-link
-        to="/"
-        class="
-          text-white
-          md:px-3 md:py-1 md:my-2
-          bg-transparent
-          hover:bg-gray-800
-          rounded
-          md:ml-5
-          sm:px-2
-        sm:py-2
-        sm:m-2
-          uppercase
-        "
-        >Home</nuxt-link
-      >
-      <nuxt-link
-        to="DownloadPage"
-        class="
-          text-white
-          md:px-3 md:py-1 md:my-2
-          bg-transparent
-          hover:bg-gray-800
-          rounded
-          md:mx-5
-          sm:px-2
-        sm:py-2
-        sm:m-2
-          uppercase
-        "
-        >Install</nuxt-link
-      >
-      <nuxt-link
-        to="DownloadPage"
-        class="
-          text-white
-          md:px-3 md:py-1 md:my-2
-          bg-transparent
-          hover:bg-gray-800
-          rounded
-          md:mx-3
-          sm:px-2
-        sm:py-2
-        sm:m-2
-          uppercase
-        "
-        >About</nuxt-link
-      >
-      <nuxt-link
-        to="LogInPage"
-        class="
-          md:px-3 md:py-1 md:my-1
-          text-white
-          bg-gray-900
-          hover:bg-blue-600
-          rounded
-          md:ml-5
-          sm:px-2
-        sm:py-2
-        sm:m-2
-          uppercase
-        "
-        >Login</nuxt-link
-      >
+
+      <menu-bar-button name="Home" link="/"></menu-bar-button>
+      <menu-bar-button name="Install" link="DownloadPage"></menu-bar-button>
+      <menu-bar-button name="About" link="DownloadPage"></menu-bar-button>
+      <menu-bar-button name="Login" link="LogInPage"></menu-bar-button>
+
     </div>
   </div>
 </template>

@@ -1,11 +1,10 @@
 <template>
-  <div class=" flex-1 bg-gray-700 rounded-lg mx-2 px-2 pt-1 my-2">
+  <div class="flex-1 justify-evenly mx-5 rounded-lg px-2 pt-1 my-5">
     <box-icon name="rocket"></box-icon>
     <div v-if="title !== ''">
-    <p class="text-white font-medium font-sans text-2x1">{{title}}</p>
-    <br>
+    <p class="text-white font-semibold font-sans text-2x1 mb-2">{{title}}</p>
     </div>
-    <p class="text-gray-50 pb-1">{{ message }}</p>
+    <p class="text-gray-50 mb-5 ml-3">{{ message }}</p>
   </div>
 </template>
 

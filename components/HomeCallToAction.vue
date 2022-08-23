@@ -27,7 +27,7 @@
       "
     >
       <menu-bar></menu-bar>
-      <div class="flex justify-center items-center h-full">
+      <div class="flex justify-center items-center mt-10 md:h-full">
         <div class="text-white">
           <h2 class="font-semibold text-4xl mb-4">{{ title }}</h2>
           <h4 class="font-semibold text-xl mb-6">{{ description }}</h4>
@@ -69,12 +69,15 @@ export default {
   props: {
     title: {
       type: String,
+      default: ''
     },
     description: {
       type: String,
+      default: ''
     },
     callToAction: {
       type: String,
+      default: ''
     },
   },
 }
