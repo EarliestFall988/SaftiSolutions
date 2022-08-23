@@ -9,7 +9,7 @@
       bg-no-repeat bg-cover
       rounded-lg
     "
-    style="background-image: url('/images/twist.jpg'); height: 500px"
+    style="background-image: url('/images/twist.jpg'); height: 700px"
   >
     <div
       class="
@@ -21,16 +21,16 @@
         w-full
         h-full
         overflow-hidden
-        bg-fixed
+        bg-gradient-to-t
+        from-gray-900
+        to-transparent
       "
-      style="background-color: rgba(17, 34, 29, 0.2)"
     >
       <menu-bar></menu-bar>
       <div class="flex justify-center items-center h-full">
         <div class="text-white">
-          <h2 class="font-semibold text-4xl mb-4">{{title}}</h2>
-          <h4 class="font-semibold text-xl mb-6">{{description}}
-          </h4>
+          <h2 class="font-semibold text-4xl mb-4">{{ title }}</h2>
+          <h4 class="font-semibold text-xl mb-6">{{ description }}</h4>
           <a
             class="
               inline-block
@@ -45,7 +45,8 @@
               leading-snug
               uppercase
               rounded
-              hover:bg-blue-600
+              hover:bg-gradient-to-r from-blue-600 to-green-600
+              hover:px-10
               transition
               duration-150
               ease-in-out
@@ -54,7 +55,7 @@
             role="button"
             data-mdb-ripple="true"
             data-mdb-ripple-color="light"
-            >{{callToAction}}</a
+            >{{ callToAction }}</a
           >
         </div>
       </div>

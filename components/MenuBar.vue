@@ -1,19 +1,37 @@
 <template>
-  <div class="my-2 ml-5 mr-3 flex flex-row-reverse">
+  <div class="flex flex-col md:flex-row mx-3">
+    <a href="/">
+      <icon-component
+        icon="logo"
+        class="flex-2 w-40 h-10 my-5 mx-auto justify-evenly"
+      ></icon-component>
+    </a>
 
-
-    <div class="flex-1 justify-end py-2 mr-5 flex flex-row">
-
+    <div
+      class="
+        flex-1
+        items-center
+        lg:justify-end
+        sm:justify-center
+        md:py-2
+        md:mr-5
+        flex
+        md:flex-row
+        flex-col
+      "
+    >
       <nuxt-link
         to="/"
         class="
           text-white
-          px-3
-          py-1
+          md:px-3 md:py-1 md:my-2
           bg-transparent
           hover:bg-gray-800
           rounded
-          ml-5
+          md:ml-5
+          sm:px-2
+        sm:py-2
+        sm:m-2
           uppercase
         "
         >Home</nuxt-link
@@ -22,12 +40,14 @@
         to="DownloadPage"
         class="
           text-white
-          py-1
-          px-3
+          md:px-3 md:py-1 md:my-2
           bg-transparent
           hover:bg-gray-800
           rounded
-          mx-5
+          md:mx-5
+          sm:px-2
+        sm:py-2
+        sm:m-2
           uppercase
         "
         >Install</nuxt-link
@@ -36,28 +56,35 @@
         to="DownloadPage"
         class="
           text-white
-          py-1
-          px-3
+          md:px-3 md:py-1 md:my-2
           bg-transparent
           hover:bg-gray-800
           rounded
-          mx-3
+          md:mx-3
+          sm:px-2
+        sm:py-2
+        sm:m-2
           uppercase
         "
         >About</nuxt-link
       >
       <nuxt-link
         to="LogInPage"
-        class="px-3 py-1 text-white bg-gray-900 hover:bg-blue-600 rounded rl-5 uppercase"
+        class="
+          md:px-3 md:py-1 md:my-1
+          text-white
+          bg-gray-900
+          hover:bg-blue-600
+          rounded
+          md:ml-5
+          sm:px-2
+        sm:py-2
+        sm:m-2
+          uppercase
+        "
         >Login</nuxt-link
       >
     </div>
-    <a href="/">
-      <icon-component
-        icon="logo"
-        class="flex-2 w-30 h-12 pt-2 pl-2"
-      ></icon-component>
-    </a>
   </div>
 </template>
 
