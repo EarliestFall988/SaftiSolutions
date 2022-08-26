@@ -1,10 +1,14 @@
 <template>
-  <div class="flex-1 justify-evenly mx-5 rounded-lg px-2 pt-1 my-5">
-    <box-icon name="rocket"></box-icon>
-    <div v-if="title !== ''">
-    <p class="text-white font-semibold font-sans text-2x1 mb-2">{{title}}</p>
+  <div class="flex-1 justify-evenly mx-5 rounded-sm p-3 my-5 bg-gray-700">
+    <div class="flex flex-row">
+      <span :class=icon></span>
+      <div v-if="title !== ''" class="flex-1">
+        <h2 class="text-white font-semibold font-sans text-2x1 mb-2">
+          {{ title }}
+        </h2>
+      </div>
     </div>
-    <p class="text-gray-50 mb-5 ml-3">{{ message }}</p>
+    <p class="text-gray-300 p-5">{{ message }}</p>
   </div>
 </template>
 
@@ -14,12 +18,16 @@ export default {
   props: {
     title: {
       type: String,
-      default: ''
+      default: '',
     },
     message: {
       type: String,
-      default: ''
+      default: '',
     },
+    icon : {
+      type: String,
+      default: '',
+    }
   },
 }
 </script>

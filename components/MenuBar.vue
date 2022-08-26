@@ -13,19 +13,21 @@
         items-center
         lg:justify-end
         justify-center
-        md:py-2
-        md:mr-5
+        md:py-2 md:mr-5
         flex
         md:flex-row
         flex-col
       "
     >
-
-      <menu-bar-button name="Home" link="/"></menu-bar-button>
-      <menu-bar-button name="Install" link="DownloadPage"></menu-bar-button>
-      <menu-bar-button name="About" link="DownloadPage"></menu-bar-button>
-      <menu-bar-button name="Login" link="LogInPage"></menu-bar-button>
-
+      <div class="hidden md:flex">
+        <menu-bar-button name="Home" link="/"></menu-bar-button>
+        <menu-bar-button name="Install" link="DownloadPage"></menu-bar-button>
+        <menu-bar-button name="About" link="DownloadPage"></menu-bar-button>
+        <menu-bar-button name="Login" link="LogInPage"></menu-bar-button>
+      </div>
+      <div class="sm:flex md:hidden my-5">
+        <mobile-main-menu-drop-down></mobile-main-menu-drop-down>
+      </div>
     </div>
   </div>
 </template>
@@ -36,6 +38,10 @@ export default {
 }
 </script>
 
+
+<style scoped>
+
+</style>
 
 
 

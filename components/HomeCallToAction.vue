@@ -51,7 +51,7 @@
               duration-150
               ease-in-out
             "
-            href="#!"
+            href="/LogInPage"
             role="button"
             data-mdb-ripple="true"
             data-mdb-ripple-color="light"
